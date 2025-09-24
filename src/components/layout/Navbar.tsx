@@ -2,6 +2,7 @@ import logo from "../../assets/logo.png"
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi"
 import React from "react"
 import ResponsiveMenu from "./ResponsiveMenu"
+import Button from "../ui/button"
 
 export const MenuLinks = [
     {
@@ -48,7 +49,10 @@ const Navbar = () => {
                                     </li>
                                 );
                             })}
-                            <button type="button" className="text-lg font-medium rounded-md text-white bg-gradient-to-r from-[#126C8D] to-[#0ba4dc] hover:from-[#0ba4dc] hover:to-[#126C8D] transition-all py-2 px-4">Contactanos</button>
+                            <Button
+                                label="Explorar servicios"
+                                onClick={() => console.log("Click en botón")}
+                            />
                         </ul>
                     </div>
 

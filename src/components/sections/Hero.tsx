@@ -1,4 +1,5 @@
 import sampleVideo from "../../assets/video.mp4"
+import Button from "../ui/button"
 
 const Hero = () => {
   return (
@@ -21,19 +22,23 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 max-w-2xl w-full text-center md:text-left md:ml-0 lg:ml-12">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
-          <span className="bg-gradient-to-r from-[#126C8D] via-[#046487] to-[#D0E1E8]  text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-[#0E6C8D] via-[#29C4AB] to-[#F7F7F8]  text-transparent bg-clip-text">
             Edernanol S.A de C.V
           </span>{" "}
-          <span className="text-white">Soluciones confiables para la industria y el transporte marítimo</span>
+          <span className="text-[#F7F7F8]">Soluciones confiables para la industria y el transporte marítimo</span>
         </h1>
-        <p className="mt-4 text-base sm:text-lg text-gray-300">
+        <p className="mt-4 text-base sm:text-lg text-[#F7F7F8]">
           Somos una empresa mexicana dedicada a ofrecer
           servicios especializados que respaldan la operación, mantenimiento y logística
           de su negocio.
         </p>
-        <button className="mt-6 px-5 py-3 text-sm sm:text-base rounded-md text-white font-semibold bg-gradient-to-r from-[#126C8D] to-[#0ba4dc] hover:from-[#0ba4dc] hover:to-[#126C8D] transition-all">
-          Solicitar Información
-        </button>
+
+        <Button
+          label="Explorar servicios"
+          className="mt-6"
+          onClick={() => console.log("Click en botón")}
+        />
+
       </div>
     </div>
   )
