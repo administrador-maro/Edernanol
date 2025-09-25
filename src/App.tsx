@@ -2,8 +2,7 @@ import Hero from "./components/sections/Hero"
 import Navbar from "./components/layout/Navbar"
 import About from "./components/sections/About"
 import Services from "./components/sections/Services"
-Services
-
+import Footer from "./components/layout/Footer"
 
 const App = () => {
   return (
@@ -12,6 +11,7 @@ const App = () => {
       <Hero />
       <Services />
       <About />
+      <Footer />
     </div>
   )
 }

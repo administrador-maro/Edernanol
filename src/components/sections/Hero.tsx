@@ -1,10 +1,10 @@
 import sampleVideo from "../../assets/video.mp4"
-import Button from "../ui/button"
+import Button from "../ui/Button"
 
 const Hero = () => {
   return (
 
-    <div className="relative min-h-screen flex items-center bg-black text-white px-4 sm:px-8 md:px-12">
+    <div className="relative h-[840px] flex items-center bg-black text-white px-4 sm:px-8 md:px-12">
       {/* Background image */}
       <div className="absolute inset-0">
         <video

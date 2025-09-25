@@ -2,7 +2,7 @@ import logo from "../../assets/logo.png"
 import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi"
 import React from "react"
 import ResponsiveMenu from "./ResponsiveMenu"
-import Button from "../ui/button"
+import Button from "../ui/Button"
 
 export const MenuLinks = [
     {

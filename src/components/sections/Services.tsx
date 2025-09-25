@@ -1,4 +1,4 @@
-import Button from "../ui/button";
+import Button from "../ui/Button"
 import service1 from "../../assets/service1.png"
 import service2 from "../../assets/service2.png"
 import service3 from "../../assets/service3.png"
@@ -6,7 +6,7 @@ import Card from "../ui/Card";
 
 const Services = () => {
     return (
-        <section className="py-24 bg-[#F8FAFC] dark:bg-[#F8FAFC] transition-colors duration-300">
+        <section className="py-12 bg-[#F8FAFC] dark:bg-[#F8FAFC] transition-colors duration-300">
             <div className="max-w-7xl mx-auto px-4">
 
                 <div className="text-center mb-16">
@@ -26,10 +26,9 @@ const Services = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 justify-items-center">
 
                     {/*Contenido de los servicios */}
-
                     <Card
                         image={service1}
-                        title="Transporte Marítimo Internacional de Carga y Altura"
+                        title="Transporte marítimo internacional de carga y altura"
                         items={[
                             "Operaciones seguras y confiables.",
                             "Cumplimiento en tiempos acordados.",
@@ -39,7 +38,7 @@ const Services = () => {
 
                     <Card
                         image={service2}
-                        title="Mantenimiento Especializado de Maquinaria y Equipo Industrial"
+                        title="Mantenimiento especializado de maquinaria y equipo industrial"
                         items={[
                             "Diagnósticos técnicos especializados.",
                             "Planes de mantenimiento preventivo.",
@@ -49,17 +48,13 @@ const Services = () => {
 
                     <Card
                         image={service3}
-                        title="Mantenimiento de Maquinaria y Equipo para Levantar Materiales"
+                        title="Mantenimiento de maquinaria y equipo para levantar materiales"
                         items={[
                             "Servicios para montacargas y grúas.",
                             "Ajustes y calibraciones seguras.",
                             "Reducción de paros en operaciones."
                         ]}
                     />
-
-
-
-
                 </div>
 
                 <div className="mt-16 text-center">

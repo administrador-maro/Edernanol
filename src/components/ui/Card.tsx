@@ -19,11 +19,6 @@ const Card: React.FC<CardProps> = ({ title, items, image }) => {
                     {title}
                 </h3>
 
-                {/* Aqui agregar la lista*/}
-                {/*<p className="mb-3 font-normal text-gray-900 dark:text-gray-900">
-                    {items}
-                </p> */}
-
                 <ul className="space-y-2 font-light leading-relaxed transition-all">
                     {
                         // Recorremos el array "items" con .map()
