@@ -8,7 +8,7 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, items, image }) => {
     return (
-        <div className="max-w-sm bg-white border  border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 transform transition duration-300 hover:scale-105 hover:shadow-2x1">
+        <div className="max-w-sm bg-white border  border-gray-200 shadow-md transform transition duration-300 hover:scale-105 hover:shadow-2x1">
             <img
                 src={image}
                 alt={title}
