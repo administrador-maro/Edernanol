@@ -60,7 +60,7 @@ const Navbar = () => {
                             })}
                             <NavLink to="/ContactPage">
                                 <Button
-                                    label="Explorar servicios"
+                                    label="Contactanos"
                                     onClick={() => console.log("Click en botón")}
                                 />
                             </NavLink>
