@@ -3,6 +3,7 @@ import { HiMenuAlt3, HiMenuAlt1 } from "react-icons/hi"
 import React from "react"
 import ResponsiveMenu from "./ResponsiveMenu"
 import Button from "../ui/Button"
+import { NavLink } from "react-router"
 
 export const MenuLinks = [
     {
@@ -13,12 +14,12 @@ export const MenuLinks = [
     {
         id: 1,
         name: "Quiene somos",
-        link: "/"
+        link: "/AboutPage"
     },
     {
         id: 1,
         name: "Servicios",
-        link: "/"
+        link: "/ServicesPage"
     }
 ]
 
@@ -30,8 +31,8 @@ const Navbar = () => {
     }
 
     return (
-        <nav className="mx-auto max-w-screen-2xl">
-            <div className=" mx-auto px-4 sm:px-12 py-3 md:py-3">
+        <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+            <div className="mx-auto max-w-screen-2xl px-4 sm:px-12 py-3 md:py-3">
                 <div className="flex justify-between items-center">
                     {/* Seccion de logo */}
                     <div>
@@ -42,17 +43,27 @@ const Navbar = () => {
                     {/* Seccion de la barra de navegación */}
                     <div className=" hidden md:block">
                         <ul className=" flex items-center gap-8">
-                            {MenuLinks.map(({ id, name }) => {
+                            {MenuLinks.map(({ id, name, link }) => {
                                 return (
                                     <li key={id} className=" cursor-pointer py-4">
-                                        <a href="" className=" text-lg font-medium hover:text-[#126C8D] py-2">{name}</a>
+                                        <NavLink
+                                            to={link}
+                                            className={({ isActive }) =>
+                                                `text-lg font-medium py-2 transition-colors ${isActive ? "text-[#126C8D]" : "hover:text-[#126C8D]"
+                                                }`
+                                            }
+                                        >
+                                            {name}
+                                        </NavLink>
                                     </li>
                                 );
                             })}
-                            <Button
-                                label="Explorar servicios"
-                                onClick={() => console.log("Click en botón")}
-                            />
+                            <NavLink to="/ContactPage">
+                                <Button
+                                    label="Explorar servicios"
+                                    onClick={() => console.log("Click en botón")}
+                                />
+                            </NavLink>
                         </ul>
                     </div>
 
