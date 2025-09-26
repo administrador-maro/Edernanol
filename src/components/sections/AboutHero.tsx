@@ -1,4 +1,3 @@
-import edernanol from "../../assets/logogris.png"
 
 const AboutHero = () => {
   return (
