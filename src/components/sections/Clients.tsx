@@ -1,3 +1,4 @@
+import "../../styles/Clients.css"
 
 const Clients = () => {
     return (
@@ -10,23 +11,29 @@ const Clients = () => {
                     </h2>
                     {/* Subtítulo */}
                     <p className="text-[#E9EAEA] text-xl mx-auto font-extralight">
-                        Socios estratégicos que aseguran calidad, puntualidad y respaldo en cada operación marítima. Comprometidos con la excelencia para garantizar seguridad y confianza en cada proyecto
+                        Socios estratégicos que aseguran calidad, puntualidad y respaldo en cada operación marítima. <br />Comprometidos con la excelencia para garantizar seguridad y confianza en cada proyecto
                     </p>
                 </div>
 
                 {/* Logos */}
-                <div className="max-w-5xl mx-auto mt-8 space-y-6 sm:space-y-8 xl:space-y-12 sm:mt-12">
+                <div className="relative overflow-hidden  py-6 sm:py-8">
                     {/* Primera fila */}
-                    <div className="grid items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-4 place-items-center gap-x-8 gap-y-6 sm:gap-y-8">
-                        <img className="object-contain w-auto h-10 mx-auto" src="https://cdn.rareblocks.xyz/collection/clarity/images/brands/2/logo-waverio.svg" alt="Waverio" />
-                        <img className="object-contain w-auto h-10 mx-auto" src="https://cdn.rareblocks.xyz/collection/clarity/images/brands/2/logo-squarestone.svg" alt="Squarestone" />
-                        <img className="object-contain w-auto h-9 mx-auto" src="https://cdn.rareblocks.xyz/collection/clarity/images/brands/2/logo-martino.svg" alt="Martino" />
-                        <img className="object-contain w-auto h-10 mx-auto" src="https://cdn.rareblocks.xyz/collection/clarity/images/brands/2/logo-virogan.svg" alt="Virogan" />
+                    <div className=" animate-marquee space-x-8 sm:space-x-12">
+                        <img className="object-contain w-auto h-6 sm:h-10" src="https://cdn.rareblocks.xyz/collection/clarity/images/brands/2/logo-waverio.svg" alt="Waverio" />
+                        <img className="object-contain w-auto h-6 sm:h-10" src="https://cdn.rareblocks.xyz/collection/clarity/images/brands/2/logo-squarestone.svg" alt="Squarestone" />
+                        <img className="object-contain w-auto h-6 sm:h-10" src="https://cdn.rareblocks.xyz/collection/clarity/images/brands/2/logo-martino.svg" alt="Martino" />
+                        <img className="object-contain w-auto h-6 sm:h-10" src="https://cdn.rareblocks.xyz/collection/clarity/images/brands/2/logo-virogan.svg" alt="Virogan" />
                     </div>
+
+                    
                 </div>
             </div>
         </section>
     )
+
+    
 }
 
 export default Clients
+
+

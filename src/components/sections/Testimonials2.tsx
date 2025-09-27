@@ -41,7 +41,7 @@ const Testimonials2 = () => {
                         Nuestros Clientes
                     </h1>
                     {/* Subtítulo */}
-                    <p className="text-black text-xl max-w-2xl mx-auto font-extralight">
+                    <p className="text-black text-xl max-w-4xl mx-auto font-extralight">
                         Queremos ser su socio estratégico en la operación mantenimiento de sus proyectos, ayudándole a optimizar recursos
                         y garantizar resultados confiables.
                     </p>
