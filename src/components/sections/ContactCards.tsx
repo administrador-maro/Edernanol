@@ -5,9 +5,9 @@ import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa"
 
 const ContactCards = () => {
     return (
-        <div className="p-4 bg-gray-50 mt-6 sm:mt-10 lg:mt-16">
+        <div className="p-4 bg-gray-50 mt-6 sm:mt-10 lg:mt-16 ">
 
-            <div className="flex justify-center space-x-4 mb-6">
+            <div className="flex justify-center space-x-4 mb-6 ">
                 <a
                     href="#"
                     className="w-15 h-15 flex items-center justify-center rounded-full 

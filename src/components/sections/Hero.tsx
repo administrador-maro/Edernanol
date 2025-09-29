@@ -1,5 +1,6 @@
 import sampleVideo from "../../assets/video.mp4"
 import Button from "../ui/Button"
+import { NavLink } from "react-router"
 
 const Hero = () => {
   return (
@@ -33,11 +34,13 @@ const Hero = () => {
           de su negocio.
         </p>
 
-        <Button
-          label="Explorar servicios"
-          className="mt-6"
-          onClick={() => console.log("Click en botón")}
-        />
+        <NavLink to="/ServicesPage">
+          <Button
+            label="Explorar servicios"
+            className="mt-6"
+            onClick={() => console.log("Click en botón")}
+          />
+        </NavLink>
 
       </div>
     </div>

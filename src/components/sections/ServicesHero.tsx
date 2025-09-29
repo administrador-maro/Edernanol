@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import diagonalImg from "../../assets/service2.png";
 
 const ServicesHero = () => {
@@ -30,12 +31,14 @@ const ServicesHero = () => {
                         seguridad, puntualidad y eficiencia en cada operación.
                     </p>
 
-                    <a
-                        href="#"
-                        className="text-base sm:text-lg lg:text-xl inline-block w-auto md:w-fit mx-auto md:mx-0 border-2 border-white text-white font-semibold px-6 py-3 lg:px-8 rounded-full transition duration-300 hover:bg-white hover:text-[#065077]"
-                    >
-                        Más información
-                    </a>
+                    <NavLink to="/ContactPage">
+                        <a
+                            href="#"
+                            className="text-base sm:text-lg lg:text-xl inline-block w-auto md:w-fit mx-auto md:mx-0 border-2 border-white text-white font-semibold px-6 py-3 lg:px-8 rounded-lg transition duration-300 hover:bg-white hover:text-[#065077]"
+                        >
+                            Más información
+                        </a>
+                    </NavLink>
                 </div>
             </div>
         </section>

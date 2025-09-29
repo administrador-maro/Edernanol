@@ -1,9 +1,10 @@
+import { NavLink } from "react-router";
 import logo from "../../assets/logo2.png";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
 
 const Footer = () => {
    return (
-        <footer className="bg-gradient-to-r from-black to-[#065077] text-white py-8">
+        <footer className="bg-gradient-to-r from-[#022D3D] to-[#065077] text-white py-8">
             <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                     {/* Footer Left: Logo and Description */}
@@ -23,9 +24,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-xl font-semibold text-white">Enlaces Rapidos</h3>
                         <ul className="mt-4 space-y-2 text-base">
-                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Inicio</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Quienes somos</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Servicios</a></li>
+                            <li><NavLink to="/"><a href="#" className="text-gray-400 hover:text-gray-300 transition">Inicio</a></NavLink></li>
+                            <li><NavLink to="/AboutPage"><a href="#" className="text-gray-400 hover:text-gray-300 transition">Quienes Somos</a></NavLink></li>
+                            <li><NavLink to="/ServicesPage"><a href="#" className="text-gray-400 hover:text-gray-300 transition">Servicios</a></NavLink></li>
                         </ul>
                     </div>
 

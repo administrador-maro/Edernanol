@@ -1,32 +1,41 @@
-import AboutSection from "../ui/AboutSection";
+import puertoImg from "../../assets/elegirnos.png";
+import CustomIcon from "../ui/CustomIcon";
 
 const AboutHeroSection = () => {
   return (
-    <section className="bg-white">
-      <AboutSection
-        title="Conoce"
-        highlight="Edernanol"
-        description="Edernanol es una empresa especializada en servicios marítimos, enfocada en brindar soluciones confiables y seguras para el transporte, la logística y el mantenimiento industrial. Con experiencia comprobada en el sector, acompañamos a nuestros clientes en cada proyecto con profesionalismo y compromiso."
-      />
+     <section className="w-full bg-white py-16 px-6 md:px-12">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        {/* Texto */}
+        <div>
+          {/* Título con icono */}
+          <h2 className="text-2xl md:text-3xl font-bold text-black flex items-center gap-2 mb-6">
+            <CustomIcon size={150} color1="#065077" color2="#2FA9C9" />
+            50 años de experiencia en transporte marítimo, logística integral y operación portuaria
+          </h2>
 
-      <AboutSection
-        title="Misión"
-        highlight="Edernanol"
-        description="Nuestra misión es ser líderes en soluciones marítimas integrales, ofreciendo innovación, seguridad y eficiencia en cada servicio. En Edernanol buscamos impulsar el crecimiento de nuestros clientes a través de la tecnología, la experiencia y la excelencia operativa."
-      />
+          {/* Párrafos */}
+          <p className="text-black leading-relaxed mb-4 text-lg">
+            En Edernanol diseñamos y operamos soluciones marítimas y logísticas para optimizar la cadena de suministro. Somos especialistas
+             en transporte marítimo, mantenimiento industrial y servicios portuarios, brindando un servicio confiable, eficiente y seguro.
+          </p>
 
-      <AboutSection
-        title="Visión"
-        highlight="Edernanol"
-        description="Nuestra visión es ser líderes en soluciones marítimas integrales, ofreciendo innovación, seguridad y eficiencia en cada servicio. En Edernanol buscamos impulsar el crecimiento de nuestros clientes a través de la tecnología, la experiencia y la excelencia operativa."
-      />
+          <p className="text-black leading-relaxed mb-4 text-lg">
+            Nuestras operaciones están orientadas a garantizar continuidad en cada eslabón de 
+            la logística: desde el arribo de embarcaciones hasta la descarga, almacenamiento y distribución terrestre.
+            Aplicamos altos estándares operativos y normativos que nos permiten 
+            reducir tiempos, optimizar costos y asegurar un flujo constante y seguro de mercancías.
+          </p>
+        </div>
 
-
-      <AboutSection
-        title="Expertos en"
-        highlight="Servicios Marítimos"
-        description="En Edernanol ponemos a disposición de las empresas experiencia en transporte marítimo de carga y altura, mantenimiento de maquinaria y equipo industrial, así como soluciones para operaciones portuarias. Nuestro compromiso es garantizar resultados seguros, eficientes y de calidad en cada operación."
-      />
+        {/* Imagen */}
+        <div className="flex justify-center">
+          <img
+            src={puertoImg}
+            alt="Puerto y operaciones logísticas"
+            className="shadow-lg w-full h-auto object-cover"
+          />
+        </div>
+      </div>
     </section>
   );
 };

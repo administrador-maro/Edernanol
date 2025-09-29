@@ -1,13 +1,17 @@
-import AboutHero from "../components/sections/AboutHero"
+
+import AboutHe from "../components/sections/AboutHero2"
 import AboutHeroSection from "../components/sections/AboutHeroSection"
-import ValueCardSection from "../components/sections/ValueCardSection"
+import MissionVision from "../components/sections/MissionVision"
+import ValuesSection from "../components/sections/ValuesSection"
 
 const AboutPage = () => {
   return (
     <div className="mt-20">
-      <AboutHero />
+      <AboutHe />
       <AboutHeroSection />
-      <ValueCardSection />
+      <MissionVision />
+      <ValuesSection />
+
     </ div>
   )
 }

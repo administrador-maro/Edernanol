@@ -3,6 +3,7 @@ import service1 from "../../assets/service1.png"
 import service2 from "../../assets/service2.png"
 import service3 from "../../assets/service3.png"
 import Card from "../ui/Card";
+import { NavLink } from "react-router";
 
 const Services = () => {
     return (
@@ -58,10 +59,12 @@ const Services = () => {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <Button
+                    <NavLink to="/ServicesPage">
+                        <Button
                         label="Explorar servicios"
                         onClick={() => console.log("Click en botón")}
                     />
+                    </NavLink>
                 </div>
             </div>
         </section>

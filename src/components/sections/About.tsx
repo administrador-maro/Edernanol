@@ -1,6 +1,7 @@
 import logogris from "../../assets/logogris2.png"
 import elegirnos from "../../assets/elegirnos.png"
 import Button from "../ui/Button"
+import { NavLink } from "react-router"
 
 const About = () => {
   return (
@@ -26,10 +27,14 @@ const About = () => {
           </p>
 
           <div className="text-center pb-10 sm:py-12">
-            <Button
-              label="Obtener informes"
-              onClick={() => console.log("Click en botón")}
-            />
+
+
+            <NavLink to="/AboutPage">
+              <Button
+                label="Obtener informes"
+                onClick={() => console.log("Click en botón")}
+              />
+            </NavLink>
           </div>
         </div>
       </div>

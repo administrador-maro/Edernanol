@@ -19,7 +19,7 @@ const ContactForm = () => {
                         className="w-full border border-slate-300 px-4 py-2 rounded-md outline-none"
                     />
                 </div>
-
+                                
                 {/* Asunto */}
                 <div className="flex flex-col space-y-2">
                     <label htmlFor="subject" className="text-lg font-medium text-black">
