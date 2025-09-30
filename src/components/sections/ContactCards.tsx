@@ -1,6 +1,7 @@
 import type { IconType } from "react-icons";
-import { FiPhone, FiMail, FiMapPin } from "react-icons/fi";
-import { FaWhatsapp, FaFacebook, FaInstagram } from "react-icons/fa"
+import { FiMapPin } from "react-icons/fi";
+import { FaFacebook, FaInstagram } from "react-icons/fa"
+import boatImg from "../../assets/barcocard.png"
 
 
 const ContactCards = () => {
@@ -8,30 +9,11 @@ const ContactCards = () => {
         <div className="p-4 bg-gray-50 mt-6 sm:mt-10 lg:mt-16 ">
 
             <div className="flex justify-center space-x-4 mb-6 ">
-                <a
-                    href="#"
-                    className="w-15 h-15 flex items-center justify-center rounded-full 
-               bg-gradient-to-r from-[#065077] to-[#29C4AB] 
-               text-white transition-transform transform hover:scale-110 duration-300"
-                >
-                    <FaWhatsapp className="text-3xl" />
-                </a>
-                <a
-                    href="#"
-                    className="w-15 h-15 flex items-center justify-center rounded-full 
-               bg-gradient-to-r from-[#065077] to-[#29C4AB] 
-               text-white transition-transform transform hover:scale-110 duration-300"
-                >
-                    <FaFacebook className="text-3xl" />
-                </a>
-                <a
-                    href="#"
-                    className="w-15 h-15 flex items-center justify-center rounded-full 
-               bg-gradient-to-r from-[#065077] to-[#29C4AB] 
-               text-white transition-transform transform hover:scale-110 duration-300"
-                >
-                    <FaInstagram className="text-3xl" />
-                </a>
+                <img
+                    src={boatImg}
+                    alt="Barco navegando"
+                    className="h-56 object-cover mx-auto"
+                />
             </div>
 
 
@@ -39,23 +21,23 @@ const ContactCards = () => {
             {/* Grid ajustada para 2 arriba y 1 abajo */}
             <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
                 <Card
-                    title="Telefono"
-                    subtitle="+52 442 285 4563"
+                    title="Facebook"
+                    subtitle="Contactanos en Facebook, como grupo Edernanol"
                     href="#"
-                    Icon={FiPhone}
+                    Icon={FaFacebook}
                 />
                 <Card
-                    title="Correo Electronico"
+                    title="Instagram"
+                    subtitle="Contactanos por Instagram, como Grupó Edernanol"
+                    href="#"
+                    Icon={FaInstagram}
+                />
+                <Card
+                    title="Email"
                     subtitle="edernanol@gmail.com"
                     href="#"
-                    Icon={FiMail}
-                />
-                <Card
-                    title="Dirección"
-                    subtitle="Av. Paseo del Atlántico Núm Ext 4400 Int. 5-A Col. Real del Valle, Mazatlán Sinaloa"
-                    href="#"
                     Icon={FiMapPin}
-                    className="sm:col-span-2" // 👈 Esta línea hace que la tarjeta ocupe todo el ancho en la segunda fila
+                    className="sm:col-span-2"
                 />
             </div>
         </div>
