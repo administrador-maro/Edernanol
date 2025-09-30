@@ -86,14 +86,21 @@ const ContactForm = () => {
             name="phone"
             type="tel"
             required
-            pattern="[0-9]{10}"       
-            minLength={10}
-            maxLength={10}
-            inputMode="numeric"        
+            maxLength={10}            
+            inputMode="numeric"          
             placeholder="5512345678"
             className="w-full border border-slate-300 px-4 py-2 rounded-md outline-none"
+            onInput={(e) => {
+              const target = e.target as HTMLInputElement;
+              // ✅ solo números
+              target.value = target.value.replace(/[^0-9]/g, "");
+            }}
           />
+          <small className="text-gray-500 text-sm">
+            Ingresa solo 10 números sin espacios ni símbolos.
+          </small>
         </div>
+
 
         {/* Asunto */}
         <div className="flex flex-col space-y-2">
