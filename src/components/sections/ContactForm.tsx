@@ -11,7 +11,7 @@ const ContactForm = () => {
     const form = e.target as HTMLFormElement;
     const data = {
       email: (form.email as HTMLInputElement).value,
-      phone: (form.phone as HTMLInputElement).value, // ✅ nuevo campo
+      phone: (form.phone as HTMLInputElement).value, 
       subject: (form.subject as HTMLInputElement).value,
       message: (form.message as HTMLTextAreaElement).value,
     };
@@ -92,7 +92,6 @@ const ContactForm = () => {
             className="w-full border border-slate-300 px-4 py-2 rounded-md outline-none"
             onInput={(e) => {
               const target = e.target as HTMLInputElement;
-              // ✅ solo números
               target.value = target.value.replace(/[^0-9]/g, "");
             }}
           />

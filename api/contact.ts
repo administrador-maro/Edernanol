@@ -5,6 +5,7 @@ import { z } from 'zod'
 // Esquema y validación
 const ContactSchema = z.object({
   email: z.string().email(),
+  phone: z.string().min(10).max(15),
   subject: z.string().min(3).max(120),
   message: z.string().min(10).max(5000),
   // Honeypot anti-bots (campo oculto que los humanos dejan vacío)
@@ -50,12 +51,12 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
     // Transport SMTP (usa variables de entorno)
     const transporter = nodemailer.createTransport({
-      host: process.env.SMTP_HOST,                 // p.ej. smtp.gmail.com
-      port: Number(process.env.SMTP_PORT || 465),  // 465 (secure) o 587 (starttls)
-      secure: Number(process.env.SMTP_PORT || 465) === 465,
+      host: process.env.SMTP_HOST,                 // "mail.edernanol.com", // servidor de Raxa
+      port: Number(process.env.SMTP_PORT || 465),  // 465 (SSL/TLS)
+      secure: Number(process.env.SMTP_PORT || 465) === 465, // true porque es 465
       auth: {
-        user: process.env.SMTP_USER,               // tu correo
-        pass: process.env.SMTP_PASS,               // tu App Password u otro
+        user: process.env.SMTP_USER,               // "contacto@edernanol.com",
+        pass: process.env.SMTP_PASS,               // contacto2025
       },
     })
 
