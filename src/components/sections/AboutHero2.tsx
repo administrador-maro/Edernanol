@@ -1,5 +1,6 @@
-import imagen from "../../assets/elegirnos.png";
-import overlay from "../../assets/logogris3.png"; // 👈 tu imagen transparente/decorativa
+import imagen from "../../assets/acerca_de_edernanol.png";
+import overlay from "../../assets/logogris3.png";
+import logoTexto from "../../assets/logo_texto.png"
 
 const AboutHero2 = () => {
   return (
@@ -29,9 +30,11 @@ const AboutHero2 = () => {
         {/* Texto */}
         <div className="text-center md:text-left max-w-2xl space-y-4 text-white">
           <p className="text-4xl font-extralight">Acerca de</p>
-          <h2 className="text-2xl font-extrabold md:text-8xl bg-clip-text text-transparent bg-white pb-4">
-            Edernanol
-          </h2>
+          <img
+            src={logoTexto}
+            alt="Edernanol"
+            className="mx-auto md:mx-0 object-contain"
+          />
           <p className="text-xl font-extralight leading-relaxed">
             Expertos en el desarrollo de soluciones marítimas, brindando
             seguridad, eficiencia y tecnología de vanguardia para cada proyecto.

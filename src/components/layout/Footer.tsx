@@ -1,6 +1,6 @@
 import { NavLink } from "react-router";
 import logo from "../../assets/logo2.png";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
    return (
@@ -46,22 +46,22 @@ const Footer = () => {
                         <h3 className="text-xl font-semibold text-white">Dirección & Contacto</h3>
 
                         <div className="mt-4 space-y-3 text-gray-400 text-base">
-                            {/* Dirección */}
-                            <p className="flex items-center">
-                                <FaMapMarkerAlt className="text-gray-400 flex-shrink-0 text-base mt-1 mr-2" />
-                                <p>Av. Paseo del Atlántico Núm Ext 4400 Int. 5-A Col. Real del Valle, Mazatlán Sinaloa</p>
-                            </p>
-
                             {/* Email */}
                             <p className="flex items-center">
                                 <FaEnvelope className="text-gray-400 flex-shrink-0 text-base mt-1 mr-2" />
                                 <p>edernanol@gmail.com</p>
                             </p>
 
-                            {/* Teléfono */}
+                            {/* Facebook */}
                             <p className="flex items-center">
-                                <FaPhone className="text-gray-400 flex-shrink-0 text-base mt-1 mr-2" />
-                                <p>+52 442 285 4563</p>
+                                <FaFacebook className="text-gray-400 flex-shrink-0 text-base mt-1 mr-2" />
+                                <p>Grupo Edernanol S.A. de C.V.</p>
+                            </p>
+
+                            {/* Instagram */}
+                            <p className="flex items-center">
+                                <FaInstagram className="text-gray-400 flex-shrink-0 text-base mt-1 mr-2" />
+                                <p>Grupo Edernanol S.A. de C.V.</p>
                             </p>
                         </div>
                     </div>

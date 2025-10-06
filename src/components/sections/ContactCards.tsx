@@ -22,13 +22,13 @@ const ContactCards = () => {
             <div className="grid gap-4 grid-cols-1 sm:grid-cols-2">
                 <Card
                     title="Facebook"
-                    subtitle="Contactanos en Facebook, como grupo Edernanol"
+                    subtitle="Contactanos en Facebook, como Grupo Edernanol S.A. de C.V."
                     href="#"
                     Icon={FaFacebook}
                 />
                 <Card
                     title="Instagram"
-                    subtitle="Contactanos por Instagram, como Grupó Edernanol"
+                    subtitle="Contactanos por Instagram, como GrupO Edernanol S.A. de C.V."
                     href="#"
                     Icon={FaInstagram}
                 />

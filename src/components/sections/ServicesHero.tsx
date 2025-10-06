@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import diagonalImg from "../../assets/service2.png";
+import diagonalImg from "../../assets/servicios_hero.png";
 
 const ServicesHero = () => {
     return (

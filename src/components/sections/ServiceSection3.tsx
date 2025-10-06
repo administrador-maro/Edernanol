@@ -1,5 +1,5 @@
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import diagonalImg from "../../assets/service3.png";
+import diagonalImg from "../../assets/servicio_tres.png";
 import Button from "../ui/Button";
 import { NavLink } from "react-router";
 
@@ -20,7 +20,7 @@ const ServiceSection3 = () => {
                 <div className="flex flex-col justify-center px-6 pb-8 md:py-8 lg:px-12">
                     <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-black">
                         <span className="bg-clip-text font-extralight text-transparent bg-gradient-to-r from-[#065077] to-[#29C4AB]">
-                            Reparación ye mantenimiento de equipo para mover y acomodar manteriales
+                            Reparación y mantenimiento de equipo para mover y acomodar manteriales
                         </span>
                     </h2>
 

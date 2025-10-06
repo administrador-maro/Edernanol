@@ -1,4 +1,4 @@
-import puertoImg from "../../assets/elegirnos.png";
+import puertoImg from "../../assets/50_años_de_experiencia.png";
 import CustomIcon from "../ui/CustomIcon";
 
 const AboutHeroSection = () => {

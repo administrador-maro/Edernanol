@@ -13,7 +13,7 @@ export const MenuLinks = [
     },
     {
         id: 1,
-        name: "Quienes somos",
+        name: "Quiénes somos",
         link: "/AboutPage"
     },
     {
@@ -60,7 +60,7 @@ const Navbar = () => {
                             })}
                             <NavLink to="/ContactPage">
                                 <Button
-                                    label="Contactanos"
+                                    label="Contáctanos"
                                     onClick={() => console.log("Click en botón")}
                                 />
                             </NavLink>

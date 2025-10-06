@@ -1,6 +1,6 @@
 import React from "react";
 import CustomIcon from "../ui/CustomIcon";
-import mision from "../../assets/elegirnos.png";
+import mision from "../../assets/mision_y_vision.png";
 
 const MissionVision: React.FC = () => {
   return (

@@ -1,4 +1,5 @@
 import imagen from "../../assets/elegirnos.png";
+import logoTexto from "../../assets/logo_texto.png"
 
 
 const AboutHero = () => {
@@ -30,9 +31,12 @@ const AboutHero = () => {
         {/* Texto */}
         <div className="text-center md:text-left max-w-2xl space-y-4 text-white">
           <p className="text-4xl font-extralight">Acerca de</p>
-          <h2 className="text-2xl font-extrabold md:text-8xl bg-clip-text text-transparent bg-white pb-4">
-            Edernanol
-          </h2>
+           {/* Logo de texto en lugar del H2 */}
+          <img
+            src={logoTexto}
+            alt="Edernanol"
+            className="mx-auto md:mx-0 w-[300px] md:w-[420px] object-contain"
+          />
           <p className="text-xl font-extralight leading-relaxed">
             Expertos en el desarrollo de soluciones marítimas, brindando
             seguridad, eficiencia y tecnología de vanguardia para cada proyecto.
