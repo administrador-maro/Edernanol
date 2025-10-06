@@ -92,7 +92,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
               <table cellpadding="8" cellspacing="0" style="width:100%;font-size:17px;border-collapse:collapse;">
                 <tr>
-                  <td style="width:160px;font-weight:700;color:#065077;">Nombre / Email:</td>
+                  <td style="width:160px;font-weight:700;color:#065077;">Email:</td>
                   <td><a href="mailto:${email}" style="color:#065077;text-decoration:none;">${email}</a></td>
                 </tr>
                 <tr>

@@ -20,7 +20,7 @@ const ServiceSection3 = () => {
                 <div className="flex flex-col justify-center px-6 pb-8 md:py-8 lg:px-12">
                     <h2 className="text-3xl md:text-5xl font-light tracking-tight mb-4 text-black">
                         <span className="bg-clip-text font-extralight text-transparent bg-gradient-to-r from-[#065077] to-[#29C4AB]">
-                            Reparación y mantenimiento de equipo para mover y acomodar manteriales
+                            Reparación y mantenimiento de equipo para mover y acomodar materiales
                         </span>
                     </h2>
 

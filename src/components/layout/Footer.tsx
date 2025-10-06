@@ -15,7 +15,7 @@ const Footer = () => {
                                 <img src={logo} alt="Logo" className="h-12 w-auto" />
                             </a>
                             <p className="mt-2 text-gray-400 text-base">
-                                Nuestro compromiso es brindar seguridad, eficiencia y calidad en cada proyecto
+                                Nuestro compromiso es brindar seguridad, eficiencia y calidad<br />en cada proyecto
                             </p>
                         </div>
                     </div>
@@ -25,7 +25,7 @@ const Footer = () => {
                         <h3 className="text-xl font-semibold text-white">Enlaces Rapidos</h3>
                         <ul className="mt-4 space-y-2 text-base">
                             <li><NavLink to="/"><a href="#" className="text-gray-400 hover:text-gray-300 transition">Inicio</a></NavLink></li>
-                            <li><NavLink to="/AboutPage"><a href="#" className="text-gray-400 hover:text-gray-300 transition">Quienes Somos</a></NavLink></li>
+                            <li><NavLink to="/AboutPage"><a href="#" className="text-gray-400 hover:text-gray-300 transition">Quiénes Somos</a></NavLink></li>
                             <li><NavLink to="/ServicesPage"><a href="#" className="text-gray-400 hover:text-gray-300 transition">Servicios</a></NavLink></li>
                         </ul>
                     </div>
@@ -34,9 +34,9 @@ const Footer = () => {
                     <div>
                         <h3 className="text-xl font-semibold text-white">Soporte & Legal</h3>
                         <ul className="mt-4 space-y-2 text-base">
-                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Terminos & Condiciones</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Politicas de privacidad</a></li>
-                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Politica de Cookies</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Términos & Condiciones</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Políticas de privacidad</a></li>
+                            <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">Políticas de Cookies</a></li>
                             <li><a href="#" className="text-gray-400 hover:text-gray-300 transition">FAQ</a></li>
                         </ul>
                     </div>
