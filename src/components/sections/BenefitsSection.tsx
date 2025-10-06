@@ -3,8 +3,8 @@ import ServiceCard from "../ui/ServiceCard";
 
 const BenefitsSection = () => {
   return (
-    <section className="bg-white py-16">
-      <div className="mx-auto px-6 lg:px-12">
+    <section className="bg-white pb-16 px-8 md:pb-24 md:px-24 lg:px-40 xl:px-52">
+      <div className="mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-light tracking-tight mb-4 text-black dark:text-black">
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#065077] to-[#29C4AB]">
@@ -13,10 +13,10 @@ const BenefitsSection = () => {
             Claves
           </h2>
           <p className="text-black dark:text-black text-xl mx-auto font-extralight">
-            Ofrecemos soluciones marítimas que garantizan seguridad, eficiencia y 
-          una red de cobertura internacional. Nuestros beneficios están diseñados 
-          para generar confianza y respaldar el crecimiento de cada empresa con 
-          la que trabajamos.
+            Ofrecemos soluciones marítimas que garantizan seguridad, eficiencia y
+            una red de cobertura internacional. Nuestros beneficios están diseñados
+            para generar confianza y respaldar el crecimiento de cada empresa con
+            la que trabajamos.
           </p>
         </div>
 
@@ -63,3 +63,4 @@ const BenefitsSection = () => {
 };
 
 export default BenefitsSection;
+
