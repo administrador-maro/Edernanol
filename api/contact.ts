@@ -76,7 +76,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
               <td style="background:linear-gradient(90deg,#065077,#29C4AB); padding:25px 40px; text-align:center;">
                 <!-- 🔹 Logo de Edernanol -->
                 <img 
-                  src="https://edernanol.com/logo.png" 
+                  src="https://www.edernanol.com/logo.png" 
                   alt="Edernanol" 
                   width="160"
                   style="display:block; margin:0 auto 10px; border:none;"
