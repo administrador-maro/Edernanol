@@ -1,5 +1,5 @@
 import { IoMdCheckmarkCircleOutline } from "react-icons/io";
-import diagonalImg from "../../assets/servicio_dos.png";
+import diagonalImg from "../../assets/servicio_dos.jpg";
 import Button from "../ui/Button";
 import { NavLink } from "react-router";
 
