@@ -77,7 +77,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
           
           <!-- CABECERA -->
           <tr>
-            <td style="background:linear-gradient(90deg,#065077,#29C4AB);color:#ffffff;text-align:center;padding:30px 40px;">
+            <td style="background-color:#198383;text-align:center;color:#ffffff;text-align:center;padding:30px 40px;">
               <h1 style="margin:0;font-size:26px;font-weight:700;">Nuevo mensaje de contacto</h1>
               <p style="margin:6px 0 0;font-size:16px;">Edernanol S.A. de C.V.</p>
             </td>
