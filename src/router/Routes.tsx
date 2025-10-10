@@ -19,7 +19,7 @@ const Routes = createBrowserRouter([
             {path: "AboutPage", element: <AboutPage />},
             {path: "ServicesPage", element: <ServicesPage />},
             {path: "ContactPage", element: <ContactPage />},
-            {path: "NotFoundPage", element: <NotFoundPage />},
+            {path: "*", element: <NotFoundPage />},
         ]
     }
 ])
